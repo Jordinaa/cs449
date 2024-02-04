@@ -22,15 +22,15 @@ Activate virtual environment
 `source venv/bin/activate`
 Run test 1 **FAIL**
 `pytest -q test1.py`
-![test1fail](/sprint0/assets/test1fail.png)
+![test1fail](sprint0/assets/test1fail.png)
 
 Run test 1 **PASS**
 `pytest -q test1.py`
-![test1pass](/sprint0/assets/test1pass.png)
+![test1pass](sprint0/assets/test1pass.png)
 
 Run test 2 **PASS**
 `pytest -q test2.py`
-![test2pass](/sprint0/assets/test2pass.png)
+![test2pass](sprint0/assets/test2pass.png)
 
 
 ### 3. **GUI programming (4 points)**
@@ -40,5 +40,5 @@ Run test 2 **PASS**
 - [x] Radio Buttons
 - [x] Screenshots 
 
-![gui](/sprint0/assets/gui.png)
-![source_code](/sprint0/assets/source_code.png)
+![gui](sprint0/assets/gui.png)
+![source_code](sprint0/assets/source_code.png)
