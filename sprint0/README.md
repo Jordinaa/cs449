@@ -29,3 +29,5 @@ Run test 2 **PASS**
 
 
 3. **GUI programming (4 points)**
+![gui](/sprint0/assets/gui.png)
+![source_code](/sprint0/assets/source_code.png)
