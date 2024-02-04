@@ -12,6 +12,10 @@
 | Project hosting site | [Github](https://github.com/Jordinaa/cs449) |
 | Other decisions if applicable | None at the moment |
 2. **Unit testing (4 points)**
+- [ ] Test 1
+- [ ] Test 2
+- [ ] Source Code of program
+
 **To run the program:**
 Activate virtual environment
 `source venv/bin/activate`
@@ -29,6 +33,10 @@ Run test 2 **PASS**
 
 
 3. **GUI programming (4 points)**
+- [ ] Text
+- [ ] Lines - have but need to work on game logic 
+- [ ] Check box
+- [ ] Radio Buttons
 
 ![gui](/sprint0/assets/gui.png)
 ![source_code](/sprint0/assets/source_code.png)
