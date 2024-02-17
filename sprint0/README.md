@@ -1,5 +1,5 @@
-# Sprint 0 Report
 # Author: Jordan Taranto
+## Sprint 0 Report
 
 ### 1. **Key Decisions of the SOS Project (2 points)**
 
