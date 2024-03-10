@@ -1,4 +1,4 @@
-#! /venv/bin/python3
+
 # Sprint-0
 # Author: Jordan Taranto
 # Reference: https://medium.com/@fareedkhandev/modern-gui-using-tkinter-12da0b983e22
