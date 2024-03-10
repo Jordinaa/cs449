@@ -2,13 +2,13 @@
 ## Sprint 1 Report
 
 #### Requirements
-- [ ] Choosing the board size
-- [ ] Choosing the game mode
-  - [ ] Simple
-  - [ ] General
-- [ ] Starting a new game
-- [ ] Making a move
-- [ ] Determining is a simpe or general game is over
+- [x] Choosing the board size
+- [x] Choosing the game mode
+  - [x] Simple
+  - [x] General
+- [x] Starting a new game
+- [x] Making a move
+- [x] Determining is a simpe or general game is over
 
 ---
 # 1. User Stories (3 points)
