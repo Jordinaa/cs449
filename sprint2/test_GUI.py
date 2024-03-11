@@ -50,3 +50,4 @@ class TestGUI(unittest.TestCase):
         self.assertTrue(all_buttons_empty)
         self.assertEqual(self.app.current_turn, "blue")
 
+unittest.main()

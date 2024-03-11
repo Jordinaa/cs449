@@ -1,6 +1,6 @@
 Jordan Taranto
 CS449
-Sprint #2
+Sprint-2 
 https://github.com/Jordinaa/cs449/tree/main/sprint2
 
 Implement the following features of the SOS game: 
