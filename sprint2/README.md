@@ -2,6 +2,9 @@ Jordan Taranto
 CS449
 Sprint #2
 
+Implement the following features of the SOS game: 
+1.  the basic components for the game options (board size and game mode) and initial game 
+2. S/O placement for human players without checking for the formation of SOS or determining the winner.
 # 1 Demonstration (8 points)
 
 |     | Feature                                             |     |
@@ -15,10 +18,10 @@ Sprint #2
 # 2 Summary of Source Code
 | Source code file name | Production code or test code? | # lines of code |
 | --------------------- | ----------------------------- | --------------- |
-| GUI.py                |                               |                 |
-| Logic.py              |                               |                 |
-| main.py               |                               |                 |
-| UnitTest.py           |                               |                 |
+| GUI.py                | Production Code               |                 |
+| Logic.py              | Production Code               |                 |
+| main.py               | Production Code               |                 |
+| UnitTest.py           | Test Code                     |                 |
 |                       |                               | Total:          |
 
 # 3 Production Code vs User stories/acceptance Criteria
