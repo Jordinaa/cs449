@@ -14,15 +14,15 @@
 # 1. User Stories (3 points)
 #### Subject to change before Sprint 3
 #### Once sprint 3 is done all changes are final
-| ID | User Story Name | User Story Description | Priority | Estimated Time (hours) | 
-| ----------- | ----------- | ----------- | ----------- | ----------- | 
-| 1 | Choose a board size | As a player, I want the board size to be fixed, so when I play with others the rules are universal and we can share strategy. | High | 2 |
-| 2 | Choose the game mode | As a player, I want to be able to choose between a simple or general game mode so that I can play for a shorter or longer amount of time. | Medium | 3 |
-| 3 | Start a new game of the chosen game mode | As a player, I want to start a new game with the game mode I choose so I can begin playing. | High | 2 |
-| 4 | Make a move in a simple game | As a player, I want to be able to make a move in a simple SOS game. | High | 4 |
-| 5 | A simple game is over | As a player, I want to know when the game is over and who won the simple game | Medium | 2 |
-| 6 | Make a move in a general game | As a player I want to be able to make a move in a general game. | High | 2 |
-| 7 | A general game is over | As a player, I want to know when the game is over and who won the general game. | High | 1 |
+| ID  | User Story Name                          | User Story Description                                                                                                                    | Priority | Estimated Time (hours) |     |
+| --- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------- | ---------------------- | --- |
+| 1   | Choose a board size                      | As a player, I want the board size to be fixed, so when I play with others the rules are universal and we can share strategy.             | High     | 2                      |     |
+| 2   | Choose the game mode                     | As a player, I want to be able to choose between a simple or general game mode so that I can play for a shorter or longer amount of time. | Medium   | 3                      |     |
+| 3   | Start a new game of the chosen game mode | As a player, I want to start a new game with the game mode I choose so I can begin playing.                                               | High     | 2                      |     |
+| 4   | Make a move in a simple game             | As a player, I want to be able to make a move in a simple SOS game.                                                                       | High     | 4                      |     |
+| 5   | A simple game is over                    | As a player, I want to know when the game is over and who won the simple game                                                             | Medium   | 2                      |     |
+| 6   | Make a move in a general game            | As a player I want to be able to make a move in a general game.                                                                           | High     | 2                      |     |
+| 7   | A general game is over                   | As a player, I want to know when the game is over and who won the general game.                                                           | High     | 1                      |     |
 ## Estimated development time: 16 hours
 
 # 2. Sprint Backlog (3 points)
