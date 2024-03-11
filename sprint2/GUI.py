@@ -1,3 +1,6 @@
+# Sprint-2
+# Author: Jordan Taranto
+
 import tkinter as tk
 
 class GUI:
@@ -111,4 +114,3 @@ class GUI:
     # main loop
     def run(self):
         self.root.mainloop()
-        

@@ -18,21 +18,21 @@ Implement the following features of the SOS game:
 # 2 Summary of Source Code
 | Source code file name | Production code or test code? | # lines of code |
 | --------------------- | ----------------------------- | --------------- |
-| GUI.py                | Production Code               |                 |
-| Logic.py              | Production Code               |                 |
-| main.py               | Production Code               |                 |
-| UnitTest.py           | Test Code                     |                 |
-|                       |                               | Total:          |
+| GUI.py                | Production Code               | 116             |
+| Logic.py              | Production Code               | 5               |
+| main.py               | Production Code               | 9               |
+| UnitTest.py           | Test Code                     | 51              |
+|                       | TOTAL:                        | 180             |
 
 # 3 Production Code vs User stories/acceptance Criteria
 
-| User Story ID | User Story Name |
-| :-----------: | --------------- |
-|       1       |                 |
-|       2       |                 |
-|       3       |                 |
-|       4       |                 |
-|       5       |                 |
+| User Story ID | User Story Name                                         |
+| :-----------: | ------------------------------------------------------- |
+|       1       | Choose a board size                                     |
+|       2       | Choose the game mode of a chosen board                  |
+|       3       | Start a new game of the chosen board size and game mode |
+|       4       | Make a move in a simple game                            |
+|       5       | Make a move in a general game                           |
 
 
 # 4 Tests vs User Stories/Acceptance Criteria
