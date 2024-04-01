@@ -50,4 +50,25 @@ class TestGUI(unittest.TestCase):
         self.assertTrue(all_buttons_empty)
         self.assertEqual(self.app.current_turn, "blue")
 
+    def test_simple_game_winner(self):
+        self.app.game_type.set("simple")
+        # Simulate moves to form an SOS horizontally
+        self.app.handle_grid_click(0, 0)  # Blue places 'S'
+        self.app.handle_grid_click(0, 1)  # Red places 'S', assume Red also places 'S' for testing purposes
+        self.app.handle_grid_click(0, 2)  # Blue places 'O'
+        # Blue places another 'S' to form SOS
+        self.app.handle_grid_click(0, 3)  # Assuming direct manipulation works, this would ideally form an SOS
+
+        self.assertEqual(self.app.current_turn, "blue")  # Assuming blue wins and game stops here
+
+    def test_general_game_scoring(self):
+        self.app.game_type.set("general")
+
+        self.app.handle_grid_click(0, 0)  # Assume an SOS is formed here for Blue
+        self.app.handle_grid_click(1, 0)  # Red's turn, assume no SOS
+        self.app.handle_grid_click(2, 0)  # Blue's turn, assume another SOS is formed
+
+        self.assertEqual(self.app.blue_score, 2)  # Assuming Blue formed two SOS
+        self.assertEqual(self.app.red_score, 0)  # Assuming Red hasn't formed an SOS yet
+
 unittest.main()

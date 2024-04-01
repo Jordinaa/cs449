@@ -16,10 +16,11 @@ In the video, you must explain what is being demonstrated.
 ### Summary of Source Code (1 points)
 
 | Source code file name | Production or Test Code? | # Lines of Code |
-|-----------------------|--------------------------|-----------------|
-| GUI.py                | Production               | XX              |
-| test_GUI.py           | Test                     | XX              |
-| Total                 |                          | XX              |
+| --------------------- | ------------------------ | --------------- |
+| GUI.py                | Production               | 145             |
+| test_GUI.py           | Test                     | 73              |
+| main.py               | Production               | 9               |
+| Total                 |                          | 227             |
 ### 3. Production Code vs User stories/Acceptance Criteria (3 points)
 
 
