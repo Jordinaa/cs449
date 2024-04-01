@@ -1,4 +1,4 @@
-# Sprint-2
+# Sprint-3
 # Author: Jordan Taranto
 
 from GUI import GUI
@@ -7,3 +7,4 @@ from GUI import GUI
 app = GUI()
 # run the GUI using the run method
 app.run()
+
