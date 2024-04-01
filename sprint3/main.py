@@ -7,4 +7,3 @@ from GUI import GUI
 app = GUI()
 # run the GUI using the run method
 app.run()
-
