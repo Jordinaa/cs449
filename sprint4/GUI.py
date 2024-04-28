@@ -168,9 +168,13 @@ class GUI:
         self.current_turn = "blue"
         self.blue_score = 0
         self.red_score = 0
-        self.create_grid()
 
-        # make computer move if it's the computer turn
+        # Clear the grid buttons
+        for row in range(self.board_size.get()):
+            for col in range(self.board_size.get()):
+                self.grid_buttons[row][col].config(text="", bg="SystemButtonFace")
+
+        # Make computer move if it's the computer turn
         if self.current_turn == "blue" and self.blue_player_type.get() == "computer":
             self.make_computer_move()
         elif self.current_turn == "red" and self.red_player_type.get() == "computer":

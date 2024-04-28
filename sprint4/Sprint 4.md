@@ -23,17 +23,17 @@ User Story Template: As a **role**, I want **goal** so that **benefit**
 | 5  | Computer follows game logic | As a player, I want the computer opponent to follow the game logic for simple and general games so that the gameplay is consistent. | High     | 3                       |
 
 # 3. Acceptance Criteria (AC) for the Computer Opponent Requirements (4 points)
-| User Story ID and Name          | AC ID | Description of Acceptance Criterion                                                      | Status    |
-|---------------------------------|-------|--------------------------------------------------------------------------------------------|-----------|
-| 1 - Choose board size           | 1.1   | The player can select the board size from a predefined set of options (e.g., 3x3, 5x5, 7x7). | Completed |
-| 2 - Choose game mode            | 2.1   | The player can choose between simple and general game modes.                               | Completed |
-| 3 - Play against computer       | 3.1   | The player can select the computer as the opponent for either the blue or red player.      | Completed |
-|                                 | 3.2   | The game starts with the selected player (human or computer) making the first move.        | Completed |
-| 4 - Computer makes valid moves  | 4.1   | The computer opponent selects an empty cell on the board for each move.                    | Completed |
-|                                 | 4.2   | The computer opponent alternates between placing 'S' and 'O' letters on the board.         | Completed |
-| 5 - Computer follows game logic | 5.1   | In simple game mode, the computer opponent aims to create an SOS pattern and win the game. | Completed |
+| User Story ID and Name          | AC ID | Description of Acceptance Criterion                                                               | Status    |
+| ------------------------------- | ----- | ------------------------------------------------------------------------------------------------- | --------- |
+| 1 - Choose board size           | 1.1   | The player can select the board size from a predefined set of options (e.g., 3x3, 5x5, 7x7).      | Completed |
+| 2 - Choose game mode            | 2.1   | The player can choose between simple and general game modes.                                      | Completed |
+| 3 - Play against computer       | 3.1   | The player can select the computer as the opponent for either the blue or red player.             | Completed |
+|                                 | 3.2   | The game starts with the selected player (human or computer) making the first move.               | Completed |
+| 4 - Computer makes valid moves  | 4.1   | The computer opponent selects an empty cell on the board for each move.                           | Completed |
+|                                 | 4.2   | The computer opponent alternates between placing 'S' and 'O' letters on the board.                | Completed |
+| 5 - Computer follows game logic | 5.1   | In simple game mode, the computer opponent aims to create an SOS pattern and win the game.        | Completed |
 |                                 | 5.2   | In general game mode, the computer opponent tries to maximize its score by creating SOS patterns. | Completed |
-|                                 | 5.3   | The game ends when the board is full or an SOS pattern is created (in simple game mode).   | Completed |
+|                                 | 5.3   | The game ends when the board is full or an SOS pattern is created (in simple game mode).          | Completed |
 
 
 # 4. Summary of All Source Code (1 points)
