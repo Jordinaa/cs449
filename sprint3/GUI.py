@@ -13,6 +13,9 @@ class GUI:
 
         self.current_turn = "blue"
         self.record_game = tk.BooleanVar(value=False)
+        # for keeping track of moves in the game for recording 
+        self.game_moves = []
+
 
         self.top_frame = tk.Frame(self.root)
         self.top_frame.pack(side="top", fill="x", padx=10, pady=5)

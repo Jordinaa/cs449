@@ -17,12 +17,12 @@ class GUI:
         self.red_color = "red"
 
         self.current_turn = "blue"
-        self.record_game = tk.BooleanVar(value=False)
+        self.record_game = tk.BooleanVar(value=True)
 
         self.top_frame = tk.Frame(self.root)
         self.top_frame.pack(side="top", fill="x", padx=10, pady=5)
 
-        self.board_size = tk.IntVar(value=5)
+        self.board_size = tk.IntVar(value=3)
         self.board_size_frame = tk.Frame(self.top_frame)
         self.board_size_frame.pack(side="right", fill="x")
         tk.Label(self.board_size_frame, text="Board size").pack(side="left")
@@ -71,6 +71,7 @@ class GUI:
             current_color = self.blue_color if self.current_turn == "blue" else self.red_color
             self.grid_buttons[row][col].config(text=current_letter, fg=current_color)
             sos_created = self.check_for_sos(row, col)
+            self.game_moves.append((row, col, current_letter))
 
             if sos_created:
                 if self.game_type.get() == "simple":
@@ -104,7 +105,7 @@ class GUI:
             computer_letter = random.choice(['S', 'O'])
             current_color = self.blue_color if self.current_turn == "blue" else self.red_color
             self.grid_buttons[row][col].config(text=computer_letter, fg=current_color)
-            
+            self.game_moves.append((row, col, computer_letter))
             # check for SOS and handle the game logic
             sos_created = self.check_for_sos(row, col)
 
@@ -120,7 +121,7 @@ class GUI:
             else:
                 self.current_turn = "red" if self.current_turn == "blue" else "blue"
 
-            # chec if board is full
+            # check if board is full
             if all(self.grid_buttons[r][c]['text'] != "" for r in range(self.board_size.get()) for c in range(self.board_size.get())):
                 if self.game_type.get() == "simple":
                     messagebox.showinfo("Game Over", "It's a draw!")
@@ -129,10 +130,8 @@ class GUI:
                     messagebox.showinfo("Game Over", f"{winner} wins!")
 
             # Make the next computer move if it's the computer's turn
-            if self.current_turn == "blue" and self.blue_player_type.get() == "computer":
-                self.make_computer_move()
-            elif self.current_turn == "red" and self.red_player_type.get() == "computer":
-                self.make_computer_move()
+            if (self.current_turn == "blue" and self.blue_player_type.get() == "computer") or (self.current_turn == "red" and self.red_player_type.get() == "computer"):
+                self.root.after(100, self.make_computer_move)
 
     def check_for_sos(self, row, col):
         sos_found = False
@@ -165,6 +164,7 @@ class GUI:
         return sos_found
 
     def start_new_game(self):
+        self.game_moves = []
         self.current_turn = "blue"
         self.blue_score = 0
         self.red_score = 0
@@ -193,7 +193,19 @@ class GUI:
             self.grid_buttons.append(row_buttons)
 
     def replay_game(self):
-        pass
+        if not self.game_moves:
+            messagebox.showinfo("Replay", "No recorded game available.")
+            return
+
+        self.start_new_game()
+
+        for move in self.game_moves:
+            row, col, letter = move
+            current_color = self.blue_color if letter == self.blue_player_letter.get() else self.red_color
+            self.grid_buttons[row][col].config(text=letter, fg=current_color)
+            self.root.update()
+            self.root.after(100)
+        # self.game_moves = [] 
 
     def run(self):
         self.root.mainloop()

@@ -129,10 +129,10 @@ class GUI:
                     messagebox.showinfo("Game Over", f"{winner} wins!")
 
             # Make the next computer move if it's the computer's turn
-            if self.current_turn == "blue" and self.blue_player_type.get() == "computer":
-                self.make_computer_move()
-            elif self.current_turn == "red" and self.red_player_type.get() == "computer":
-                self.make_computer_move()
+
+            if (self.current_turn == "blue" and self.blue_player_type.get() == "computer") or \
+            (self.current_turn == "red" and self.red_player_type.get() == "computer"):
+                self.root.after(100, self.make_computer_move)
 
     def check_for_sos(self, row, col):
         sos_found = False
